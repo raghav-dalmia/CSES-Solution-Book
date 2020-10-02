@@ -1,0 +1,2 @@
+## Hint
+Brute force
