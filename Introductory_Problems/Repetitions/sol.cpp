@@ -29,18 +29,22 @@ using namespace std;
 
 signed main()
 {
-    fio
-    string s; cin>>s;
-    int final_ans=1,temp_ans=1;
-    for(int i=1;i<s.size();i++){
-        if(s[i]==s[i-1]){
-            temp_ans++;
-        }else{
-            final_ans=max(final_ans,temp_ans);
-            temp_ans=1;
-        }
-    }
-    final_ans=max(final_ans,temp_ans);
-    cout<<final_ans;
+	
+	fio
+	string s; cin>>s;
+	int final_ans=1,temp_ans=1;
+        for(int i=1;i<s.size();i++){
+	    if(s[i]==s[i-1]){
+		temp_ans++;
+	    }else{
+		final_ans=max(final_ans,temp_ans);
+		temp_ans=1;
+     	    }
+    	}
+    	final_ans=max(final_ans,temp_ans);
+	cout<<final_ans;
 	return 0;
+	
+	
+	
 }
