@@ -26,10 +26,8 @@ using namespace std;
 #define endl              '\n'
 #define fio               ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-
 signed main()
 {
-	
 	fio
 	string s; cin>>s;
 	int final_ans=1,temp_ans=1;
@@ -44,7 +42,4 @@ signed main()
     	final_ans=max(final_ans,temp_ans);
 	cout<<final_ans;
 	return 0;
-	
-	
-	
 }
