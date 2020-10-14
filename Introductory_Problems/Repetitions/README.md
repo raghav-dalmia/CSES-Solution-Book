@@ -1,3 +1,3 @@
-# [REPETITION](https://cses.fi/problemset/task/1094)
+# [REPETITION](https://cses.fi/problemset/task/1069)
 ## Hint
 Brute force
