@@ -1,0 +1,57 @@
+/***********************************************
+ *                                             *
+ *   author: keshav2508 (Keshav Dalmia)       *
+ *   updated on: 17-10-2020, 5:10:53 pm IST   *
+ *                                             *
+\***********************************************/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define int               long long int
+#define ff                first
+#define ss                second
+#define pb                push_back
+#define mp                make_pair
+#define pii               pair<int,int>
+#define vi                vector<int>
+#define vvi               vector<vector<int>>
+#define mii               map<int,int>
+#define pqb               priority_queue<int>
+#define pqs               priority_queue<int,vi,greater<int> >
+#define mod               1000000007
+#define inf               1e18
+#define ps(x,y)           fixed<<setprecision(y)<<x
+#define heap(arr,n,type)  type *arr=new type[n];
+#define w(x)              int x; cin>>x; while(x--)
+#define endl              '\n'
+#define fio               ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+signed main()
+{
+    fio
+    int n; cin>>n;
+    vi dp(n+1,0);
+    dp[0]=1;
+    for(int i=0;i<n;i++){
+        if(dp[i]!=0){
+            for(int k=1;k<=6;k++){
+                if((i+k)<=n)
+                    dp[i+k] = (dp[i+k]+ dp[i])%mod;
+            }
+        }
+    }
+    cout<<dp[n]%mod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
