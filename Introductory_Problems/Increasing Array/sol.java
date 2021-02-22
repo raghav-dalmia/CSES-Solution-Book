@@ -22,6 +22,6 @@ class Sol{
         array[i] = array[i-1];
         }
     }
-    cout<<ans<<endl;
+    System.out.println(ans);
     } 
 } 
